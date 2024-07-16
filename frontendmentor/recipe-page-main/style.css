@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(25, 55%, 90%);
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 40%;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.main-container img {
+    margin: auto;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.main-container {
+    font-family: "Outfit";
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 50px;
+    gap: 20px;
+}
+
+.main-container hr {
+    border: none;
+    height: 2px;
+    color: #757575;
+}
+
+.main-container .title {
+    font-family: "Young Serif", serif;
+    color: #8d483c;
+    font-weight: 400;
+    border: 10px;
+}
+
+.main-container .intro-text .title-primary {
+    font-family: "Young Serif", serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+}
+
+.main-container .intro-text p {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.main-container .preparation-container h3 {
+    color: #763249;
+    padding: 5px;
+}
+
+.main-container .preparation-container {
+    font-family: "Outfit";
+    background-color: #fdf5fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main-container .preparation-container li, .main-container .ingredients-container li, .instruction-container li {
+    vertical-align: middle;
+    padding: 5px 5px 5px 15px;
+    margin-left: 30px;
+}
+
+.main-container .nutrition-container table {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.main-container .nutrition-container table .value-nutrition {
+    color: #8d483c;
+    font-weight: 600;
+}
+
+.main-container .nutrition-container table td {
+    padding: 8px;
+    border-bottom: 1px solid #757575;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
