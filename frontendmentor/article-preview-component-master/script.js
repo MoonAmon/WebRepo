@@ -58,7 +58,6 @@ btn_share.addEventListener('click', (e) => {
         <div class="user-text">
             <p><strong>SHARE</strong></p>
         </div>`;
-        
         user_card.style.backgroundColor = 'gray';
         div_user_info.style.fontsize = '30px';
         is_origin_content = false;
