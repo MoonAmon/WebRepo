@@ -4,17 +4,19 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: 1400px) {
     body {
         background-color: hsl(213, 38%, 94%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 
     main {
         font-family: 'Manrope';
         color: #454c54;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
     }
 
     .main-img {
@@ -25,17 +27,15 @@
 
     .main-card {
         display: flex;
+        overflow: hidden;
         background-color: #fdfdfd;
         align-items: center;
-        width: 1400px;
-        height: 550px;
+        width: 100vh;
+        height: 500px;
         border-radius: 20px;
     }
 
-    .card-content {
-        flex-direction: column;
-    }
-    
+
     .main-text p {
         font-size: 20px;
         margin: 20px;
@@ -46,18 +46,82 @@
         margin: 20px
     }
 
+    .share-popup {
+        position: absolute;
+        display: none;
+        background-color: #475569;
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        top: 53%;
+        left: 140vh;
+        transform: translate(-50%, -50%);
+    }
+
+    .share-popup::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #475569 transparent transparent transparent;
+    }
+
+    .popup-content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .popup-content p {
+        color: #707986;
+        letter-spacing: 6px;
+    }
+
+    .popup-content button {
+        border: none;
+        border-radius: 180px;
+        cursor: pointer;
+        background: none;
+    }
+
     .user-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        gap: 380px;
+    }
+
+    .user-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .btn-share {
+        border-radius: 180px;
+        border: none;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    #user-img {
+        border-radius: 180px;
+        height: 70px;
+        width: 70px;
     }
 
 
 }
 
 
-@media (max-width: 660px) {
+@media (max-width: 1400px) {
 
     body {
         background-color: hsl(210, 46%, 95%);

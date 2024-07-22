@@ -3,6 +3,7 @@ const btn_share = document.querySelector('.btn-share');
 const div_user_info = document.querySelector('.user-info');
 const user_card = document.querySelector('.user-card');
 const btn_container = document.querySelector('.btn-container');
+const popup = document.querySelector('.share-popup');
 
 const facebook_img = document.createElement('img');
 const twitter_img = document.createElement('img');
@@ -43,8 +44,9 @@ function toogleSocialMediaButtons() {
     
 }
 
-btn_share.addEventListener('click', (e) => {
-    if (!is_origin_content) {
+if (window.innerWidth < 1400) {
+ btn_share.addEventListener('click', (e) => {
+    if (!is_origin_content && window.innerWidth < 1400) {
         div_user_info.innerHTML = ' <img src="images/avatar-michelle.jpg" id="user-img">\n' +
             '            <div class="user-text">\n' +
             '              <p><strong>Michelle Appleton</strong></p>\n' +
@@ -59,9 +61,18 @@ btn_share.addEventListener('click', (e) => {
             <p><strong>SHARE</strong></p>
         </div>`;
         user_card.style.backgroundColor = 'gray';
-        div_user_info.style.fontsize = '30px';
+        div_user_info.style.fontSize = '30px';
         is_origin_content = false;
     }
     toogleSocialMediaButtons();
 
 })
+   
+} else {
+ document.querySelector('.btn-share').addEventListener('click', (e) => {
+    if (window.innerWidth >= 1400) {
+        popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+    }
+})   
+}
+
