@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="successMessage" style="display: none">
+      <h2>Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <form id="contactForm">
+      <h1>Contact Us</h1>
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <span class="error" id="firstNameError"></span>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <span class="error" id="lastNameError"></span>
+
+      <label for="emailField">Email Address</label>
+      <input type="email" id="emailField" name="emailField" required>
+      <span class="error" id="emailFieldError"></span>
+
+      <label>Query Type</label>
+      <div>
+        <input type="checkbox" name="generalEnquiry" id="generalEnquiry">
+        <label for="generalEnquiry">General Enquiry</label>
+      </div>
+      <div>
+        <input type="checkbox" name="supportRequest" id="supportRequest">
+        <label for="supportRequest">Support Request</label>
+      </div>
+      <span class="error" id="queryTypeError"></span>
+
+      <label for="messageField">Message</label>
+      <textarea id="messageField" name="message" rows="5" required></textarea>
+      <span class="error" id="messageFieldError"></span>
+
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+
+  <!--
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  This field is required
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+  -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
